@@ -1,0 +1,24 @@
+img{
+    width: 100%;
+}
+.dFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 1400px;
+}
+dl{
+    font-style: normal;
+    background: #333333;
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 0.04em;
+}
+dt{
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    color: #555555;
+}
