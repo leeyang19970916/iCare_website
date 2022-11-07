@@ -11125,6 +11125,13 @@ h3 {
     border-color: #dee2e6;
   }
 }
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
 img {
   width: 100%;
 }
@@ -11147,10 +11154,11 @@ img {
 
 dl {
   font-style: normal;
-  background: #333333;
-  font-weight: 500;
+  color: #333333;
+  font-weight: bolder;
   font-size: 40px;
   letter-spacing: 0.04em;
+  margin: 0;
 }
 
 dt {
@@ -11158,6 +11166,38 @@ dt {
   font-size: 20px;
   letter-spacing: 0.02em;
   color: #555555;
+  margin: 0;
+}
+
+dd {
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: 0.02em;
+  color: black;
+  margin: 0;
+}
+
+.main-template {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 6.5rem;
+}
+.main-template .main-left {
+  width: 50%;
+}
+.main-template .main-right {
+  width: 50%;
 }
 
 header .header {
@@ -11195,6 +11235,7 @@ header .header .h-left .logo .images {
 header .header .h-left .version {
   letter-spacing: 0.01em;
   font-size: 16px;
+  font-weight: bolder;
 }
 header .header .h-right {
   width: 20%;
@@ -11209,7 +11250,43 @@ header .header .h-right {
 }
 header .header .h-right .btn-info {
   color: white;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   padding: 6px 24px;
+}
+
+footer .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0;
+}
+footer .footer .image {
+  max-width: 185px;
+}
+footer .footer .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 1rem;
 }

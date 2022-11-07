@@ -1,3 +1,9 @@
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
 img{
     width: 100%;
 }
@@ -11,14 +17,38 @@ img{
 }
 dl{
     font-style: normal;
-    background: #333333;
-    font-weight: 500;
+    color: #333333;
+    font-weight:bolder;
     font-size: 40px;
     letter-spacing: 0.04em;
+    margin: 0;
 }
 dt{
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 0.02em;
     color: #555555;
+    margin: 0;
+}
+dd{
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 0.02em;
+    color: black;
+    margin: 0;
+}
+.main-template{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 6.5rem;
+    .main-left{
+        width: 50%;
+    }
+    .main-right{
+        width: 50%;
+    }
 }
