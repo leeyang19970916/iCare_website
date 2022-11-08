@@ -10465,14 +10465,18 @@ header .header .h-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.5rem;
   font-weight: 700;
-  width: 40%;
+  width: 60%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
 }
 header .header .h-left .logo {
   color: #4A4A4A;
@@ -10483,25 +10487,43 @@ header .header .h-left .logo .images {
 }
 header .header .h-left .version {
   letter-spacing: 0.01em;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bolder;
-}
-header .header .h-right {
-  width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 30%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 2rem;
+}
+header .header .h-right {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
 }
 header .header .h-right .btn-info {
   color: white;
   font-size: 18px;
   font-weight: 500;
-  padding: 6px 24px;
+  width: 30%;
+  margin: 0 0 0 2rem;
 }
 
 section .app_download {
@@ -10586,7 +10608,7 @@ section .sign-up .sign-up-step {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 2rem 4rem;
+  padding: 2rem 3rem;
 }
 section .sign-up .sign-up-step .sign-up-icon {
   display: -webkit-box;

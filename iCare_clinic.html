@@ -16,11 +16,14 @@
             <div class="pl-3">iCare 愛管家</div>
           </div>
           <div class="version">
-            <a href="./iCare_clinic.html" id="clinic" class="text-info">診所版</a>
+            <div class="version-btn">
+              <a href="./iCare_clinic.html" id="clinic" class="text-info">診所版</a>
+            </div>
+            <div class="version-btn">
+              <a href="./iCare_personal.html" id="personal" class="text-dark">個人版</a>
+            </div>
           </div>
-          <div class="version">
-            <a href="./iCare_personal.html" id="personal" class="text-dark">個人版</a>
-          </div>
+
         </div>
         <div class="h-right">
           <div class="btn btn-info">診所登入</div>
@@ -217,8 +220,53 @@
             功能細節，或有任何疑問，都歡迎您透過右側表單，或直接來電與我們聯繫：電話：02-26561818
           </dt>
         </div>
-        <div class="main-pic">
-          <img src="./pic/content/clinic/c-7.svg" alt="" />
+        <div class="main-form">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </form>
         </div>
       </div>
     </section>
@@ -236,4 +284,4 @@
     </footer>
   </body>
 </html>
-<script src="./all.js"></script>
+<!-- <script src="./all.js"></script> -->
