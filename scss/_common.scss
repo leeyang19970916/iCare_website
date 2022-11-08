@@ -11,6 +11,8 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
 .container{
     max-width: 1400px;
@@ -45,10 +47,10 @@ dd{
     overflow: hidden;
     margin: 0 auto;
     padding: 0 6.5rem;
-    .main-left{
-        width: 50%;
+    .main-content{
+        width: 40%;
     }
-    .main-right{
-        width: 50%;
+    .main-pic{
+        width: 60%;
     }
 }
