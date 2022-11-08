@@ -2,8 +2,14 @@
 @import "./scss/variables" ;
 @import "./node_modules/bootstrap/scss/mixins";
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
+
 @import "./scss/common" ;
+
 @import "./scss/header" ;
+
 @import "./scss/banner" ;
-@import "./scss/footer" ;
-@import "./scss/custom" ;
+
+@import "./scss/section_app" ;
+@import "./scss/section_signUp";
+
+@import "./scss/footer";

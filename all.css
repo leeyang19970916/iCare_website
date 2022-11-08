@@ -10401,10 +10401,6 @@ img {
   overflow: hidden;
 }
 
-.container {
-  max-width: 1400px;
-}
-
 dl {
   font-style: normal;
   color: #333333;
@@ -10508,7 +10504,7 @@ header .header .h-right .btn-info {
   padding: 6px 24px;
 }
 
-footer .footer {
+section .app_download {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10524,10 +10520,10 @@ footer .footer {
           align-items: center;
   padding: 3rem 0;
 }
-footer .footer .image {
+section .app_download .image {
   max-width: 185px;
 }
-footer .footer .content {
+section .app_download .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10590,7 +10586,7 @@ section .sign-up .sign-up-step {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 2rem 3rem;
+  padding: 2rem 4rem;
 }
 section .sign-up .sign-up-step .sign-up-icon {
   display: -webkit-box;
@@ -10608,7 +10604,7 @@ section .sign-up .sign-up-step .sign-up-icon {
           align-items: center;
   width: 20%;
   background-color: white;
-  padding: 3rem 3rem;
+  padding: 3rem 0rem;
   position: relative;
   border-radius: 8px;
   max-height: 300px;
@@ -10626,6 +10622,7 @@ section .sign-up .sign-up-step .sign-up-icon .sign-num {
   top: 0;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
+  line-height: 40px;
 }
 section .sign-up .sign-up-step .sign-up-icon .sign-img {
   min-width: 80px;
@@ -10656,4 +10653,38 @@ section .sign-up .sign-up-step .sign-up-icon .sign-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+footer {
+  background-color: #4a4a4a;
+  color: white;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  font-size: 20px;
+  max-height: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer .footer-link {
+  width: 50%;
+  margin: 0 auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 3.5rem;
+}
+footer .footer-link a {
+  color: white;
+}
+footer .footer-copyright {
+  font-weight: 400;
+  font-size: 18px;
 }

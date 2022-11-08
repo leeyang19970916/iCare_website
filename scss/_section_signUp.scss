@@ -28,7 +28,7 @@ section {
         .sign-up-step {
             justify-content: space-around;
             flex-wrap: wrap;
-            padding: 2rem 3rem;
+            padding: 2rem 4rem;
             .sign-up-icon {
                 display: flex;
                 flex-direction: column;
@@ -36,7 +36,7 @@ section {
                 align-items: center;
                 width: 20%;
                 background-color: white;
-                padding: 3rem 3rem;
+                padding: 3rem 0rem;
                 position: relative;
                 border-radius: 8px;
                 max-height: 300px;
@@ -53,6 +53,7 @@ section {
                     position: absolute;
                     top: 0;
                     transform: translate(0, -50%);
+                    line-height: 40px;
                 }
 
                 .sign-img {
