@@ -5,11 +5,20 @@ section{
         justify-content: center;
         align-items: center;
         padding: 2rem 0;
+        @media (max-width:576px) {
+            padding: 1rem 0;
+        }
         .image{
             max-width: 150px;
+            @media (max-width:576px) {
+                max-width: 56px;
+            }
         }
         .img-app{
             max-width: 230px;
+            @media (max-width:576px) {
+                max-width: 120px;
+            }
         }
         .content{
             display: flex;

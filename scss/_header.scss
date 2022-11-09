@@ -4,6 +4,10 @@ header {
         justify-content: space-between;
         align-items: center;
         padding: 25px 0;
+        @media (max-width:576px) {
+            flex-direction: column;
+            padding: 5px 0;
+        }
         .h-left {
             display: flex;
             justify-content: flex-start;
@@ -13,9 +17,14 @@ header {
             width: 60%;
             flex-wrap: wrap;
             overflow: hidden;
+            @media (max-width:576px) {
+                width: 100%;
+                flex-direction: column;
+            }
             .logo {
                 color: #4A4A4A;
                 letter-spacing: 0.02em;
+                font-size: 2rem;
                 .images {
                     max-width: 50px;
                 }
@@ -30,7 +39,13 @@ header {
                 width: 30%;
                 justify-content: space-around;
                 padding-left: 2rem;
-                .version-btn {}
+                @media (max-width:576px) {
+                    width: 100%;
+                    padding: 0;
+                }
+                .version-btn {
+
+                }
             }
 
         }
@@ -42,13 +57,22 @@ header {
             align-items: center;
             flex-wrap: wrap;
             overflow: hidden;
-
+            @media (max-width:576px) {
+                width: 100%;
+                justify-content: space-between;
+                padding: 0 15px;
+            }
             .btn-info {
                 color: white;
                 font-size: 18px;
                 font-weight: 500;
                 width: 30%;
                 margin: 0 0 0 2rem;
+                @media (max-width:576px) {
+                    margin: 0;
+                    width: 49%;
+                    font-size: 16px;
+                }
             }
 
         }

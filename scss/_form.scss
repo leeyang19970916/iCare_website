@@ -1,50 +1,74 @@
-.section-from{
+.section-from {
     min-height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
-    .container-clinic-from{
+    @media (max-width:576px){
+        padding: 1rem 0;
+    }
+    .container-clinic-from {
         max-width: 75%;
         display: flex;
-        justify-content:space-around;
-        align-items:flex-start;
+        justify-content: space-around;
+        align-items: flex-start;
         flex-wrap: wrap;
         overflow: hidden;
-        padding: 0 5rem ;
-        .main-content{
+        padding: 0 5rem;
+        @media (max-width:576px) {
+            max-width: 100%;
+            flex-direction: column;
+            padding: 0 1rem;
+            align-items: center;
+        }
+
+        .main-content {
             width: 45%;
+            @media (max-width:576px){
+                width: 100%;
+            }
+            dl{
+                @media (max-width:576px){
+                    text-align: center;
+                    padding: 0;
+                }
+            }
+            dt{
+                @media (max-width:576px){
+                    width: 100%;
+                    padding: 0.5rem;
+                }
+            }
         }
-        .main-form{
+
+        .main-form {
             width: 30%;
-        }
-    }
-}
-form{
-    input{
-        &::placeholder{
-            color: #495057!important;
-            font-weight: bolder;
-            font-size: 1em;
-        }
-        &:focus{
-            border:2px solid lightblue;
-        }
-    }
-    textarea{
-        &::placeholder{
-            color: #495057!important;
-            font-size: 1em;
-            font-weight: bolder;
-        }
-    }
-    select{
-        option{
-            &::placeholder{
-                color: #495057!important;
-                font-size: 1em;
-                font-weight: bolder;
+            @media (max-width:576px){
+                width: 100%;
             }
         }
     }
+}
+
+form {
+    .form-control {
+        font-weight: 400;
+        color: #495057;
+
+        &:focus {
+            color: #495057;
+            font-weight: 400;
+            border: 1px solid #5BC7C6;
+        }
+        &::placeholder {
+            color: gray;
+            font-weight: bolder;
+            font-size: 1em;
+        }
+        &.form-control-select{
+            color: gray;
+            font-weight: bolder;
+        }
+    }
+
 }

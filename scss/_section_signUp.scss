@@ -1,4 +1,10 @@
 section {
+    &.section-sign-up{
+        padding: 3rem 0 1.5rem 0;
+        @media (max-width:576px) {
+            padding: 0;
+        }
+    }
     .sign-up {
         flex-direction: column;
         display: flex;
@@ -12,16 +18,19 @@ section {
             align-items: center;
 
             dl {
-                font-size: 40px;
+                // font-size: 2.5rem;
                 color: #333333;
-                font-weight: bolder;
+                // font-weight: bolder;
             }
 
             dt {
-                font-size: 20px;
+                // font-size: 20px;
                 color: #333333;
-                font-weight: bold;
+                // font-weight: bold;
                 padding: 1rem 0;
+                @media (max-width:576px) {
+                    padding: 0rem;
+                }
             }
         }
 
@@ -29,6 +38,9 @@ section {
             justify-content: space-around;
             flex-wrap: wrap;
             padding: 2rem 1rem;
+            @media (max-width:576px) {
+                padding: 1rem;
+            }
             .sign-up-icon {
                 display: flex;
                 flex-direction: column;
@@ -41,7 +53,10 @@ section {
                 border-radius: 8px;
                 max-height: 300px;
                 height: 300px;
-
+                @media (max-width:576px) {
+                    width: 45%;
+                    margin: 20px 10px;
+                }
                 .sign-num {
                     border-radius: 50%;
                     font-weight: bolder;
