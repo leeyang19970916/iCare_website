@@ -1,0 +1,50 @@
+.section-from{
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    .container-clinic-from{
+        max-width: 75%;
+        display: flex;
+        justify-content:space-around;
+        align-items:flex-start;
+        flex-wrap: wrap;
+        overflow: hidden;
+        padding: 0 5rem ;
+        .main-content{
+            width: 45%;
+        }
+        .main-form{
+            width: 30%;
+        }
+    }
+}
+form{
+    input{
+        &::placeholder{
+            color: #495057!important;
+            font-weight: bolder;
+            font-size: 1em;
+        }
+        &:focus{
+            border:2px solid lightblue;
+        }
+    }
+    textarea{
+        &::placeholder{
+            color: #495057!important;
+            font-size: 1em;
+            font-weight: bolder;
+        }
+    }
+    select{
+        option{
+            &::placeholder{
+                color: #495057!important;
+                font-size: 1em;
+                font-weight: bolder;
+            }
+        }
+    }
+}

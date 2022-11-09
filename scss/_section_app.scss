@@ -4,9 +4,12 @@ section{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 3rem 0;
+        padding: 2rem 0;
         .image{
-            max-width: 185px;
+            max-width: 150px;
+        }
+        .img-app{
+            max-width: 230px;
         }
         .content{
             display: flex;

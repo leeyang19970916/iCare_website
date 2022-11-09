@@ -10401,6 +10401,10 @@ img {
   overflow: hidden;
 }
 
+.container {
+  max-width: 75%;
+}
+
 dl {
   font-style: normal;
   color: #333333;
@@ -10412,10 +10416,11 @@ dl {
 
 dt {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: 0.02em;
   color: #555555;
   margin: 0;
+  padding: 0.5rem 1.5rem 0 0;
 }
 
 dd {
@@ -10440,13 +10445,25 @@ dd {
       flex-wrap: wrap;
   overflow: hidden;
   margin: 0 auto;
-  padding: 0 6.5rem;
+  padding: 0;
 }
-.main-template .main-content {
+.main-template.container-clinic {
+  max-width: 75%;
+}
+.main-template.container-clinic .main-content {
   width: 40%;
 }
-.main-template .main-pic {
+.main-template.container-clinic .main-pic {
   width: 60%;
+}
+.main-template.container-personal {
+  max-width: 70%;
+}
+.main-template.container-personal .main-content {
+  width: 50%;
+}
+.main-template.container-personal .main-pic {
+  width: 50%;
 }
 
 header .header {
@@ -10540,10 +10557,13 @@ section .app_download {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 section .app_download .image {
-  max-width: 185px;
+  max-width: 150px;
+}
+section .app_download .img-app {
+  max-width: 230px;
 }
 section .app_download .content {
   display: -webkit-box;
@@ -10608,7 +10628,7 @@ section .sign-up .sign-up-step {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 2rem 3rem;
+  padding: 2rem 1rem;
 }
 section .sign-up .sign-up-step .sign-up-icon {
   display: -webkit-box;
@@ -10677,6 +10697,124 @@ section .sign-up .sign-up-step .sign-up-icon .sign-content {
           align-items: center;
 }
 
+.section-from {
+  min-height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+}
+.section-from .container-clinic-from {
+  max-width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+  padding: 0 5rem;
+}
+.section-from .container-clinic-from .main-content {
+  width: 45%;
+}
+.section-from .container-clinic-from .main-form {
+  width: 30%;
+}
+
+form input::-webkit-input-placeholder {
+  color: #495057 !important;
+  font-weight: bolder;
+  font-size: 1em;
+}
+
+form input::-moz-placeholder {
+  color: #495057 !important;
+  font-weight: bolder;
+  font-size: 1em;
+}
+
+form input:-ms-input-placeholder {
+  color: #495057 !important;
+  font-weight: bolder;
+  font-size: 1em;
+}
+
+form input::-ms-input-placeholder {
+  color: #495057 !important;
+  font-weight: bolder;
+  font-size: 1em;
+}
+
+form input::placeholder {
+  color: #495057 !important;
+  font-weight: bolder;
+  font-size: 1em;
+}
+form input:focus {
+  border: 2px solid lightblue;
+}
+form textarea::-webkit-input-placeholder {
+  color: #495057 !important;
+  font-size: 1em;
+  font-weight: bolder;
+}
+form textarea::-moz-placeholder {
+  color: #495057 !important;
+  font-size: 1em;
+  font-weight: bolder;
+}
+form textarea:-ms-input-placeholder {
+  color: #495057 !important;
+  font-size: 1em;
+  font-weight: bolder;
+}
+form textarea::-ms-input-placeholder {
+  color: #495057 !important;
+  font-size: 1em;
+  font-weight: bolder;
+}
+form textarea::placeholder {
+  color: #495057 !important;
+  font-size: 1em;
+  font-weight: bolder;
+}
+form select option::-webkit-input-placeholder {
+  color: #495057 !important;
+  font-size: 1em;
+  font-weight: bolder;
+}
+form select option::-moz-placeholder {
+  color: #495057 !important;
+  font-size: 1em;
+  font-weight: bolder;
+}
+form select option:-ms-input-placeholder {
+  color: #495057 !important;
+  font-size: 1em;
+  font-weight: bolder;
+}
+form select option::-ms-input-placeholder {
+  color: #495057 !important;
+  font-size: 1em;
+  font-weight: bolder;
+}
+form select option::placeholder {
+  color: #495057 !important;
+  font-size: 1em;
+  font-weight: bolder;
+}
+
 footer {
   background-color: #4a4a4a;
   color: white;
@@ -10697,16 +10835,18 @@ footer {
           justify-content: center;
 }
 footer .footer-link {
-  width: 50%;
+  width: 45%;
   margin: 0 auto;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0 3.5rem;
+  padding: 0 1rem;
 }
 footer .footer-link a {
   color: white;
 }
 footer .footer-copyright {
+  padding-top: 0.1rem;
   font-weight: 400;
   font-size: 18px;
+  letter-spacing: 2px;
 }
