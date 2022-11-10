@@ -10587,6 +10587,11 @@ header .header {
   margin: 0 auto;
   width: 100%;
 }
+@media (max-width: 576px) {
+  header .header {
+    padding: 0;
+  }
+}
 header .header .h-left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10643,7 +10648,7 @@ header .header .h-left .logo .logo-name {
 @media (max-width: 996px) {
   header .header .h-left .logo .logo-name {
     width: 80%;
-    padding-left: 0.5rem;
+    padding-left: 0.2rem;
     font-size: 1.25rem;
   }
 }
@@ -10672,6 +10677,7 @@ header .header .h-left .version {
             justify-content: flex-start;
     padding: 0;
     width: 100%;
+    letter-spacing: 0px;
   }
 }
 @media (max-width: 576px) {
@@ -10682,7 +10688,7 @@ header .header .h-left .version {
 }
 @media (max-width: 996px) {
   header .header .h-left .version .version-btn {
-    margin: 0 0.5rem;
+    font-size: 0.5rem;
   }
 }
 header .header .h-right {
