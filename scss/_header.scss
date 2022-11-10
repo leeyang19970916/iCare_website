@@ -3,10 +3,10 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 25px 0;
+        padding: 15px 15px;
+        margin: 0 auto;
+        width: 100%;
         @media (max-width:576px) {
-            flex-direction: column;
-            padding: 5px 0;
         }
         .h-left {
             display: flex;
@@ -15,18 +15,35 @@ header {
             font-size: 1.5rem;
             font-weight: 700;
             width: 60%;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             overflow: hidden;
             @media (max-width:576px) {
                 width: 100%;
                 flex-direction: column;
             }
-            .logo {
-                color: #4A4A4A;
-                letter-spacing: 0.02em;
-                font-size: 2rem;
-                .images {
-                    max-width: 50px;
+            .logo{
+                display: flex;
+                justify-content:flex-start;
+                align-items: center;
+                flex-wrap: nowrap;
+                width: auto;
+                @media (max-width:996px) {
+                    width: 100%
+                }
+                .logo-images {
+                    width: auto;
+                    @media (max-width:996px) {
+                        width: 20%;
+                    }
+                }
+                .logo-name{
+                    padding-left: 1.5rem;
+                    width: auto;
+                    @media (max-width:996px) {
+                        width: 80%;
+                        padding-left: 0.5rem;
+                        font-size: 1.25rem;
+                    }
                 }
             }
             .version {
@@ -39,12 +56,19 @@ header {
                 width: 30%;
                 justify-content: space-around;
                 padding-left: 2rem;
+                @media (max-width:996px) {
+                    justify-content: flex-start;
+                    padding: 0;
+                    width: 100%
+                }
                 @media (max-width:576px) {
                     width: 100%;
                     padding: 0;
                 }
                 .version-btn {
-
+                    @media (max-width:996px) {
+                        margin: 0 0.5rem;
+                    }
                 }
             }
 
@@ -57,6 +81,11 @@ header {
             align-items: center;
             flex-wrap: wrap;
             overflow: hidden;
+            @media (max-width:996px) {
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+            }
             @media (max-width:576px) {
                 width: 100%;
                 justify-content: space-between;
@@ -66,8 +95,14 @@ header {
                 color: white;
                 font-size: 18px;
                 font-weight: 500;
-                width: 30%;
+                // width: 
                 margin: 0 0 0 2rem;
+                padding: 0.2rem;
+                @media (max-width:996px) {
+                    font-size: 16px;
+                    width: 100%;
+                    margin: 0 3px;
+                }
                 @media (max-width:576px) {
                     margin: 0;
                     width: 49%;
