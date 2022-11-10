@@ -91,6 +91,9 @@ section {
                     top: 0;
                     transform: translate(0, -50%);
                     line-height: 40px;
+                    @media (max-width:576px){
+                        line-height: 44px;
+                    }
                 }
 
                 .sign-img {

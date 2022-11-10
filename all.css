@@ -10427,11 +10427,11 @@ dl {
     padding: 0.5rem 0;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 750px) {
   dl {
     font-size: 1.5rem;
     letter-spacing: 0;
-    padding: 0rem 0;
+    padding: 1rem 0 0.5rem 0;
   }
 }
 
@@ -10454,14 +10454,7 @@ dt {
   dt {
     font-size: 1rem;
     letter-spacing: 0;
-    padding: 0rem 1rem;
-  }
-}
-@media (max-width: 576px) {
-  dt {
-    font-size: 1rem;
-    letter-spacing: 0;
-    padding: 0 1rem;
+    padding: 0 1rem 0.5rem 1rem;
   }
 }
 
@@ -10896,6 +10889,11 @@ section .sign-up .sign-up-step .sign-up-icon .sign-num {
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   line-height: 40px;
+}
+@media (max-width: 576px) {
+  section .sign-up .sign-up-step .sign-up-icon .sign-num {
+    line-height: 44px;
+  }
 }
 section .sign-up .sign-up-step .sign-up-icon .sign-img {
   min-width: 80px;
