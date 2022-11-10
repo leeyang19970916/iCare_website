@@ -10607,10 +10607,6 @@ header .header .h-left {
 @media (max-width: 576px) {
   header .header .h-left {
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 header .header .h-left .logo {
