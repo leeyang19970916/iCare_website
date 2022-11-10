@@ -1,62 +1,90 @@
-a{
+a {
     text-decoration: none;
-    &:hover{
+
+    &:hover {
         text-decoration: none;
     }
 }
-img{
+
+img {
     width: 100%;
 }
-.dFlex{
+
+.dFlex {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     overflow: hidden;
 }
-.container{
+
+.container {
+
     // max-width: 75%;
     // max-width: 1400px;
     @media (min-width: 1200px) {
         max-width: 75%;
     }
-    
+
     @media (max-width:576px) {
         max-width: 100%;
     }
 }
-dl{
+
+dl {
     font-style: normal;
     color: #333333;
-    font-weight:bolder;
+    font-weight: bolder;
     font-size: 2.5rem;
     letter-spacing: 0.04em;
     margin: 0;
+
+    @media (max-width:996px) {
+        font-size: 1.5rem;
+        letter-spacing: 0;
+        padding: 0.5rem 0;
+    }
+
     @media (max-width:576px) {
         font-size: 1.5rem;
         letter-spacing: 0;
-        padding:0.5rem 0;
+        padding: 0rem 0;
     }
 }
-dt{
+
+dt {
     font-weight: 400;
     font-size: 1.375rem;
     letter-spacing: 0.02em;
     color: #555555;
     margin: 0;
     padding: 0.5rem 1.5rem 0 0;
+
+    @media (max-width:996px) {
+        font-size: 1rem;
+        letter-spacing: 0;
+        padding: 0rem 0;
+    }
+    @media (max-width:750px) {
+        font-size: 1rem;
+        letter-spacing: 0;
+        padding: 0rem 1rem;
+    }
+
     @media (max-width:576px) {
         font-size: 1rem;
         letter-spacing: 0;
         padding: 0 1rem;
     }
 }
-dd{
+
+dd {
     font-weight: bold;
     font-size: 1.75rem;
     letter-spacing: 0.02em;
     color: black;
     margin: 0;
+
     @media (max-width:576px) {
         text-align: center;
         font-size: 1rem;
@@ -64,7 +92,8 @@ dd{
         padding: 0.1rem;
     }
 }
-.main-template{
+
+.main-template {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,52 +101,75 @@ dd{
     overflow: hidden;
     margin: 0 auto;
     padding-top: 1rem;
-    @media (max-width:576px) {
+
+    @media (max-width:1200px) {
+        max-width: 100% !important;
+    }
+
+    @media (max-width:750px) {
         max-width: 100%;
         flex-direction: column;
         padding: 0;
     }
-    &.main-template-reverse{
-        @media (max-width:576px) {
+
+    &.main-template-reverse {
+        @media (max-width:750px) {
             flex-direction: column-reverse;
         }
     }
-    &.container-clinic{
+
+    &.container-clinic {
         max-width: 75%;
-        @media (max-width:576px) {
+
+        @media (max-width:750px) {
             max-width: 100%;
         }
-        .main-content{
+
+        .main-content {
             width: 40%;
-            @media (max-width:576px) {
+
+            @media (max-width:996px) {
+                padding: 0 1rem;
+            }
+
+            @media (max-width:750px) {
                 width: 100%;
                 text-align: center;
                 margin: 0 auto;
+                padding: 0;
             }
         }
-        .main-pic{
+
+        .main-pic {
             width: 60%;
-            @media (max-width:576px) {
+
+            @media (max-width:750px) {
                 width: 100%;
             }
         }
     }
-    &.container-personal{
+
+    &.container-personal {
         max-width: 70%;
-        @media (max-width:576px) {
+
+        @media (max-width:750px) {
             max-width: 100%;
         }
-        .main-content{
+
+        .main-content {
             width: 50%;
-            @media (max-width:576px) {
+
+            @media (max-width:750px) {
                 width: 100%;
                 text-align: center;
                 margin: 0 auto;
             }
         }
-        .main-pic{
+
+        .main-pic {
             width: 50%;
-            @media (max-width:576px) {
+
+            @media (max-width:750px) {
                 width: 100%;
             }
         }

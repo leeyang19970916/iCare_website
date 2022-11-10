@@ -1,6 +1,12 @@
 section {
     &.section-sign-up{
         padding: 3rem 0 1.5rem 0;
+        @media (max-width:996px) {
+            padding:1rem  0;
+        }
+        @media (max-width:750px) {
+            padding: 0;
+        }
         @media (max-width:576px) {
             padding: 0;
         }
@@ -28,6 +34,10 @@ section {
                 color: #333333;
                 // font-weight: bold;
                 padding: 1rem 0;
+                @media (max-width:996px) {
+                    padding-top: 0;
+                    padding-bottom: 1rem;
+                }
                 @media (max-width:576px) {
                     padding: 0rem;
                 }
@@ -38,6 +48,13 @@ section {
             justify-content: space-around;
             flex-wrap: wrap;
             padding: 2rem 1rem;
+            @media (max-width:996px) {
+                max-width: none;
+            }
+            @media (max-width:750px) {
+                max-width: none;
+                padding: 0;
+            }
             @media (max-width:576px) {
                 padding: 0;
             }
@@ -53,6 +70,10 @@ section {
                 border-radius: 8px;
                 max-height: 300px;
                 height: 300px;
+                @media (max-width:750px) {
+                    width: 45%;
+                    margin: 2rem 0 1rem 0;
+                }
                 @media (max-width:576px) {
                     width: 48%;
                     margin: 2.5rem 0 1rem 0;

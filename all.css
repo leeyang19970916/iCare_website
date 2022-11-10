@@ -10420,11 +10420,18 @@ dl {
   letter-spacing: 0.04em;
   margin: 0;
 }
-@media (max-width: 576px) {
+@media (max-width: 996px) {
   dl {
     font-size: 1.5rem;
     letter-spacing: 0;
     padding: 0.5rem 0;
+  }
+}
+@media (max-width: 576px) {
+  dl {
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    padding: 0rem 0;
   }
 }
 
@@ -10435,6 +10442,20 @@ dt {
   color: #555555;
   margin: 0;
   padding: 0.5rem 1.5rem 0 0;
+}
+@media (max-width: 996px) {
+  dt {
+    font-size: 1rem;
+    letter-spacing: 0;
+    padding: 0rem 0;
+  }
+}
+@media (max-width: 750px) {
+  dt {
+    font-size: 1rem;
+    letter-spacing: 0;
+    padding: 0rem 1rem;
+  }
 }
 @media (max-width: 576px) {
   dt {
@@ -10476,7 +10497,12 @@ dd {
   margin: 0 auto;
   padding-top: 1rem;
 }
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
+  .main-template {
+    max-width: 100% !important;
+  }
+}
+@media (max-width: 750px) {
   .main-template {
     max-width: 100%;
     -webkit-box-orient: vertical;
@@ -10486,7 +10512,7 @@ dd {
     padding: 0;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 750px) {
   .main-template.main-template-reverse {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -10497,7 +10523,7 @@ dd {
 .main-template.container-clinic {
   max-width: 75%;
 }
-@media (max-width: 576px) {
+@media (max-width: 750px) {
   .main-template.container-clinic {
     max-width: 100%;
   }
@@ -10505,17 +10531,23 @@ dd {
 .main-template.container-clinic .main-content {
   width: 40%;
 }
-@media (max-width: 576px) {
+@media (max-width: 996px) {
+  .main-template.container-clinic .main-content {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 750px) {
   .main-template.container-clinic .main-content {
     width: 100%;
     text-align: center;
     margin: 0 auto;
+    padding: 0;
   }
 }
 .main-template.container-clinic .main-pic {
   width: 60%;
 }
-@media (max-width: 576px) {
+@media (max-width: 750px) {
   .main-template.container-clinic .main-pic {
     width: 100%;
   }
@@ -10523,7 +10555,7 @@ dd {
 .main-template.container-personal {
   max-width: 70%;
 }
-@media (max-width: 576px) {
+@media (max-width: 750px) {
   .main-template.container-personal {
     max-width: 100%;
   }
@@ -10531,7 +10563,7 @@ dd {
 .main-template.container-personal .main-content {
   width: 50%;
 }
-@media (max-width: 576px) {
+@media (max-width: 750px) {
   .main-template.container-personal .main-content {
     width: 100%;
     text-align: center;
@@ -10541,7 +10573,7 @@ dd {
 .main-template.container-personal .main-pic {
   width: 50%;
 }
-@media (max-width: 576px) {
+@media (max-width: 750px) {
   .main-template.container-personal .main-pic {
     width: 100%;
   }
@@ -10681,6 +10713,11 @@ section .app_download {
           align-items: center;
   padding: 2rem 0;
 }
+@media (max-width: 996px) {
+  section .app_download {
+    max-width: 100%;
+  }
+}
 @media (max-width: 576px) {
   section .app_download {
     padding: 1rem 0;
@@ -10721,6 +10758,16 @@ section .app_download .content {
 
 section.section-sign-up {
   padding: 3rem 0 1.5rem 0;
+}
+@media (max-width: 996px) {
+  section.section-sign-up {
+    padding: 1rem 0;
+  }
+}
+@media (max-width: 750px) {
+  section.section-sign-up {
+    padding: 0;
+  }
 }
 @media (max-width: 576px) {
   section.section-sign-up {
@@ -10765,6 +10812,12 @@ section .sign-up .sign-up-title dt {
   color: #333333;
   padding: 1rem 0;
 }
+@media (max-width: 996px) {
+  section .sign-up .sign-up-title dt {
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+}
 @media (max-width: 576px) {
   section .sign-up .sign-up-title dt {
     padding: 0rem;
@@ -10776,6 +10829,17 @@ section .sign-up .sign-up-step {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 2rem 1rem;
+}
+@media (max-width: 996px) {
+  section .sign-up .sign-up-step {
+    max-width: none;
+  }
+}
+@media (max-width: 750px) {
+  section .sign-up .sign-up-step {
+    max-width: none;
+    padding: 0;
+  }
 }
 @media (max-width: 576px) {
   section .sign-up .sign-up-step {
@@ -10803,6 +10867,12 @@ section .sign-up .sign-up-step .sign-up-icon {
   border-radius: 8px;
   max-height: 300px;
   height: 300px;
+}
+@media (max-width: 750px) {
+  section .sign-up .sign-up-step .sign-up-icon {
+    width: 45%;
+    margin: 2rem 0 1rem 0;
+  }
 }
 @media (max-width: 576px) {
   section .sign-up .sign-up-step .sign-up-icon {
@@ -10871,6 +10941,11 @@ section .sign-up .sign-up-step .sign-up-icon .sign-content {
           align-items: center;
   padding: 2rem 0;
 }
+@media (max-width: 1200px) {
+  .section-from {
+    min-height: auto;
+  }
+}
 @media (max-width: 576px) {
   .section-from {
     padding: 1rem 0;
@@ -10891,14 +10966,31 @@ section .sign-up .sign-up-step .sign-up-icon .sign-content {
   overflow: hidden;
   padding: 0 5rem;
 }
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
+  .section-from .container-clinic-from {
+    padding: 0 3rem;
+    max-width: 100%;
+  }
+}
+@media (max-width: 750px) {
   .section-from .container-clinic-from {
     max-width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0 1rem;
+  }
+  .section-from .container-clinic-from dt {
+    padding: 0 1rem 0 0;
+  }
+}
+@media (max-width: 576px) {
+  .section-from .container-clinic-from {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0 1rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -10906,6 +10998,11 @@ section .sign-up .sign-up-step .sign-up-icon .sign-content {
 }
 .section-from .container-clinic-from .main-content {
   width: 45%;
+}
+@media (max-width: 1200px) {
+  .section-from .container-clinic-from .main-content {
+    width: 50%;
+  }
 }
 @media (max-width: 576px) {
   .section-from .container-clinic-from .main-content {
@@ -10926,6 +11023,11 @@ section .sign-up .sign-up-step .sign-up-icon .sign-content {
 }
 .section-from .container-clinic-from .main-form {
   width: 30%;
+}
+@media (max-width: 1200px) {
+  .section-from .container-clinic-from .main-form {
+    width: 50%;
+  }
 }
 @media (max-width: 576px) {
   .section-from .container-clinic-from .main-form {
@@ -10997,7 +11099,7 @@ footer .footer-link {
       justify-content: space-around;
   padding: 0 1rem;
 }
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
   footer .footer-link {
     width: 100%;
     padding: 0.5rem 0rem 0 0rem;

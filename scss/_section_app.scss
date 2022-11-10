@@ -5,6 +5,9 @@ section{
         justify-content: center;
         align-items: center;
         padding: 2rem 0;
+        @media (max-width:996px) {
+            max-width: 100%;
+        }
         @media (max-width:576px) {
             padding: 1rem 0;
         }
