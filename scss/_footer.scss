@@ -21,10 +21,13 @@ footer {
             padding: 0.5rem 0rem 0 0rem;
         }
         .footer-link-single{
-            width: 100%;
+            width: auto;
             padding-bottom: 0.5rem;
             a {
                 color: white;
+            }
+            @media (max-width:576px) {
+                width: 100%;
             }
         }
 

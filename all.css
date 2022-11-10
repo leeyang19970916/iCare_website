@@ -11004,11 +11004,16 @@ footer .footer-link {
   }
 }
 footer .footer-link .footer-link-single {
-  width: 100%;
+  width: auto;
   padding-bottom: 0.5rem;
 }
 footer .footer-link .footer-link-single a {
   color: white;
+}
+@media (max-width: 576px) {
+  footer .footer-link .footer-link-single {
+    width: 100%;
+  }
 }
 footer .footer-copyright {
   padding-top: 0.1rem;
