@@ -10,7 +10,7 @@ section {
         display: flex;
         justify-content: center;
         align-items: center;
-
+        padding: 0 0.5rem;
         .sign-up-title {
             display: flex;
             justify-content: center;
@@ -39,7 +39,7 @@ section {
             flex-wrap: wrap;
             padding: 2rem 1rem;
             @media (max-width:576px) {
-                padding: 1rem;
+                padding: 0;
             }
             .sign-up-icon {
                 display: flex;
@@ -54,8 +54,9 @@ section {
                 max-height: 300px;
                 height: 300px;
                 @media (max-width:576px) {
-                    width: 45%;
-                    margin: 20px 10px;
+                    width: 48%;
+                    margin: 2.5rem 0 1rem 0;
+                    justify-content:flex-start;
                 }
                 .sign-num {
                     border-radius: 50%;

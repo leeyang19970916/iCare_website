@@ -15,8 +15,12 @@ img{
     overflow: hidden;
 }
 .container{
-    max-width: 75%;
+    // max-width: 75%;
     // max-width: 1400px;
+    @media (min-width: 1200px) {
+        max-width: 75%;
+    }
+    
     @media (max-width:576px) {
         max-width: 100%;
     }
@@ -67,10 +71,11 @@ dd{
     flex-wrap: wrap;
     overflow: hidden;
     margin: 0 auto;
-    padding: 0;
+    padding-top: 1rem;
     @media (max-width:576px) {
         max-width: 100%;
         flex-direction: column;
+        padding: 0;
     }
     &.main-template-reverse{
         @media (max-width:576px) {

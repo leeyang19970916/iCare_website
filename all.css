@@ -10401,8 +10401,10 @@ img {
   overflow: hidden;
 }
 
-.container {
-  max-width: 75%;
+@media (min-width: 1200px) {
+  .container {
+    max-width: 75%;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -10472,7 +10474,7 @@ dd {
       flex-wrap: wrap;
   overflow: hidden;
   margin: 0 auto;
-  padding: 0;
+  padding-top: 1rem;
 }
 @media (max-width: 576px) {
   .main-template {
@@ -10481,6 +10483,7 @@ dd {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0;
   }
 }
 @media (max-width: 576px) {
@@ -10688,7 +10691,7 @@ section .app_download .image {
 }
 @media (max-width: 576px) {
   section .app_download .image {
-    max-width: 56px;
+    max-width: 100px;
   }
 }
 section .app_download .img-app {
@@ -10738,6 +10741,7 @@ section .sign-up {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 0.5rem;
 }
 section .sign-up .sign-up-title {
   display: -webkit-box;
@@ -10775,7 +10779,7 @@ section .sign-up .sign-up-step {
 }
 @media (max-width: 576px) {
   section .sign-up .sign-up-step {
-    padding: 1rem;
+    padding: 0;
   }
 }
 section .sign-up .sign-up-step .sign-up-icon {
@@ -10802,8 +10806,11 @@ section .sign-up .sign-up-step .sign-up-icon {
 }
 @media (max-width: 576px) {
   section .sign-up .sign-up-step .sign-up-icon {
-    width: 45%;
-    margin: 20px 10px;
+    width: 48%;
+    margin: 2.5rem 0 1rem 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 section .sign-up .sign-up-step .sign-up-icon .sign-num {
@@ -10984,7 +10991,7 @@ footer {
           justify-content: center;
 }
 footer .footer-link {
-  width: 45%;
+  width: 50%;
   margin: 0 auto;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -10993,13 +11000,14 @@ footer .footer-link {
 @media (max-width: 576px) {
   footer .footer-link {
     width: 100%;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
     padding: 0.5rem 0rem 0 0rem;
   }
 }
-footer .footer-link a {
+footer .footer-link .footer-link-single {
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+footer .footer-link .footer-link-single a {
   color: white;
 }
 footer .footer-copyright {
@@ -11018,6 +11026,7 @@ footer .footer-copyright {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-bottom: 0.5rem;
 }
 @media (max-width: 576px) {
   footer .footer-copyright {
