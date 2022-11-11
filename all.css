@@ -10534,7 +10534,7 @@ dd {
   }
 }
 .main-template.container-clinic .main-content.main-content-right {
-  padding: 0 15px;
+  padding: 0 0 0 15px;
 }
 @media (max-width: 750px) {
   .main-template.container-clinic .main-content.main-content-right {
@@ -11148,7 +11148,7 @@ section .sign-up .sign-up-step .sign-up-icon .sign-content {
   }
 }
 .section-from .container-clinic-from .main-form {
-  width: 30%;
+  width: 45%;
 }
 @media (max-width: 1200px) {
   .section-from .container-clinic-from .main-form {
