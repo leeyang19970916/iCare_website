@@ -10557,6 +10557,9 @@ dd {
 .main-template.container-personal .main-content {
   width: 50%;
 }
+.main-template.container-personal .main-content.main-content-left {
+  padding-left: 3rem;
+}
 @media (max-width: 750px) {
   .main-template.container-personal .main-content {
     width: 100%;
@@ -11195,7 +11198,7 @@ footer .footer-link {
 }
 @media (max-width: 1200px) {
   footer .footer-link {
-    width: 100%;
+    width: 80%;
     padding: 0.5rem 0rem 0 0rem;
   }
 }
