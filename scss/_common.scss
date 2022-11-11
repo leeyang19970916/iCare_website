@@ -167,6 +167,12 @@ dd {
                     padding: 0;
                 }
             }
+            &.main-content-right{
+                padding-right:1rem;
+                @media (max-width:750px) {
+                    padding: 0;
+                }
+            }
             @media (max-width:750px) {
                 width: 100%;
                 text-align: center;
