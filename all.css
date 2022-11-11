@@ -10525,6 +10525,22 @@ dd {
 .main-template.container-clinic .main-content {
   width: 40%;
 }
+.main-template.container-clinic .main-content.main-content-left {
+  padding-left: 1rem;
+}
+@media (max-width: 750px) {
+  .main-template.container-clinic .main-content.main-content-left {
+    padding: 0;
+  }
+}
+.main-template.container-clinic .main-content.main-content-right {
+  padding: 0 15px;
+}
+@media (max-width: 750px) {
+  .main-template.container-clinic .main-content.main-content-right {
+    padding: 0;
+  }
+}
 @media (max-width: 996px) {
   .main-template.container-clinic .main-content {
     padding: 0 1rem;

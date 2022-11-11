@@ -130,7 +130,18 @@ dd {
 
         .main-content {
             width: 40%;
-
+            &.main-content-left{
+                padding-left: 1rem;
+                @media (max-width:750px) {
+                    padding: 0;
+                }
+            }
+            &.main-content-right{
+                padding:0 15px;
+                @media (max-width:750px) {
+                    padding: 0;
+                }
+            }
             @media (max-width:996px) {
                 padding: 0 1rem;
             }
