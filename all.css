@@ -10937,7 +10937,7 @@ section .sign-up .sign-up-step .sign-up-icon .sign-content {
           align-items: center;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 350px) {
   section.section-sign-up {
     padding: 0;
   }
