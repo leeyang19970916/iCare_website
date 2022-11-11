@@ -24,9 +24,7 @@ section {
             align-items: center;
 
             dl {
-                // font-size: 2.5rem;
                 color: #333333;
-                // font-weight: bolder;
             }
 
             dt {
@@ -122,4 +120,76 @@ section {
             }
         }
     }
+}
+@media (max-width:400px) {
+    section {
+        &.section-sign-up{
+            padding: 0
+        }
+        .sign-up {
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 0.5rem;
+            .sign-up-title {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+    
+                dl {
+                    color: #333333;
+                }
+    
+                dt {
+                    padding: 0;
+                }
+            }
+    
+            .sign-up-step {
+                justify-content: space-around;
+                flex-wrap: wrap;
+                padding: 0;
+                .sign-up-icon {
+                    padding: 2rem 0rem;
+                    height: 250px;
+                    width: 100%;
+                    .sign-num {
+                        border-radius: 50%;
+                        font-weight: bolder;
+                        width: 56px;
+                        height: 56px;
+                        border: 6px solid #FFFFFF;
+                        font-size: 30px;
+                        text-align: center;
+                        position: absolute;
+                        top: 0;
+                        transform: translate(0, -50%);
+                        line-height: 40px;
+                    }
+    
+                    .sign-img {
+                        min-width: 80px;
+                    }
+    
+                    .sign-title {
+                        padding: 0.5rem 0 0 0;
+                    }
+    
+                    .sign-content {
+                        letter-spacing: 0.02em;
+                        color: #333333;
+                        font-size: 20px;
+                        font-weight: 600;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+    
 }
