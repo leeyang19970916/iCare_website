@@ -10561,6 +10561,11 @@ dd {
   padding-left: 3rem;
 }
 @media (max-width: 750px) {
+  .main-template.container-personal .main-content.main-content-left {
+    padding: 0;
+  }
+}
+@media (max-width: 750px) {
   .main-template.container-personal .main-content {
     width: 100%;
     text-align: center;
@@ -10681,10 +10686,10 @@ header .header-right .btn-info {
   header .header-left .logo .version-btn {
     font-weight: 900;
     font-size: 0.75rem;
-    margin-left: 0.5rem;
+    margin-left: 1rem;
   }
   header .header-left .logo .version-btn.version-btn-two {
-    margin-left: 0.25rem;
+    margin-left: 0.5rem;
   }
   header .header-right {
     width: 40%;
