@@ -1,0 +1,118 @@
+section.banner {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background: rgb(25, 105, 101);
+  font-size: 4rem;
+}
+@media (max-width: 1200px) {
+  section.banner {
+    height: 200px;
+  }
+}
+@media (max-width: 750px) {
+  section.banner {
+    height: 150px;
+    font-size: 3rem;
+  }
+}
+section.banner .about-banner {
+  letter-spacing: 0.02rem;
+}
+section .app-btn {
+  color: white;
+  font-size: x-large;
+  width: 40%;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+}
+section .app-btn:hover {
+  color: white;
+}
+@media (max-width: 1200px) {
+  section .app-btn {
+    width: 70%;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  section .app-btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
+section .img-app-block {
+  width: 40%;
+}
+@media (max-width: 1200px) {
+  section .img-app-block {
+    width: 70%;
+  }
+}
+@media (max-width: 576px) {
+  section .img-app-block {
+    width: 100%;
+  }
+}
+section .img-app-block .img-app {
+  width: 50%;
+  max-width: initial;
+}
+
+main .main-content {
+  width: 60%;
+  margin: 0 auto;
+  padding: 4rem 15px;
+  font-size: x-large;
+  color: #343a40 !important;
+}
+@media (max-width: 1200px) {
+  main .main-content {
+    padding: 2rem 15px;
+    width: 90%;
+  }
+}
+@media (max-width: 750px) {
+  main .main-content {
+    padding: 1rem 30px;
+    width: 100%;
+  }
+}
+main .main-content .main-content-padding {
+  padding: 1rem 0;
+  letter-spacing: 5px;
+}
+
+@media (max-width: 996px) {
+  dl {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 750px) {
+  dl {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 576px) {
+  dl {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  section .app_download {
+    padding: 1rem 15px;
+  }
+  section .app_download .content {
+    padding-bottom: 0;
+  }
+}

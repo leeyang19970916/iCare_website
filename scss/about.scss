@@ -1,0 +1,95 @@
+section{
+    &.banner{
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background: rgb(25, 105, 101);
+        font-size: 4rem;
+        @media (max-width:1200px) {
+            height: 200px;
+        }
+        @media (max-width:750px) {
+            height: 150px;
+            font-size: 3rem;
+        }
+        .about-banner{
+            letter-spacing: 0.02rem;
+        }
+    }
+    .app-btn{
+        color: white;
+        font-size: x-large;
+        width: 40%;
+        margin-bottom: 2rem;
+        padding: 1rem 0;
+        &:hover{
+            color: white;
+        }
+        @media (max-width:1200px) {
+            width: 70%;
+            margin-bottom: 1rem;
+        }
+        @media (max-width:576px) {
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+    }
+    .img-app-block{
+        width: 40%;
+        @media (max-width:1200px) {
+            width: 70%;
+        }
+        @media (max-width:576px) {
+            width: 100%;
+        }
+        .img-app{
+            width: 50%;
+            max-width: initial;
+        }
+    }
+}
+main{
+    .main-content{
+        width: 60%;
+        margin: 0 auto;
+        padding: 4rem 15px;
+        font-size: x-large;
+        color: #343a40 !important;
+        @media (max-width:1200px) {
+            padding: 2rem 15px;
+            width: 90%;
+        }
+        @media (max-width:750px) {
+            padding: 1rem 30px;
+            width: 100%;
+        }
+        .main-content-padding{
+            padding: 1rem 0;
+            letter-spacing: 5px;
+        }
+    }
+}
+
+    dl {
+        @media (max-width: 996px){
+            font-size: 2.5rem;
+        }
+        @media (max-width: 750px){
+            font-size: 1.5rem;
+        }
+        @media (max-width: 576px){
+            font-size: 1.2rem;
+            padding: 0.5rem 0;
+        }
+    }
+    @media (max-width: 576px){
+        section .app_download {
+            padding: 1rem 15px;
+            .content{
+                padding-bottom: 0;
+            }
+        }
+    }
+
