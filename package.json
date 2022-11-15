@@ -3,5 +3,23 @@
     "bootstrap": "^4.6.2",
     "jquery": "^3.6.1",
     "sass": "^1.56.0"
-  }
+  },
+  "name": "icare_website",
+  "version": "1.0.0",
+  "main": "all.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leeyang19970916/iCare_website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leeyang19970916/iCare_website/issues"
+  },
+  "homepage": "https://github.com/leeyang19970916/iCare_website#readme",
+  "description": ""
 }
