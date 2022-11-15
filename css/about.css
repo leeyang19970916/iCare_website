@@ -21,7 +21,7 @@ section.banner {
 @media (max-width: 750px) {
   section.banner {
     height: 150px;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 section.banner .about-banner {
