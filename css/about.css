@@ -1,5 +1,5 @@
 section.banner {
-  height: 300px;
+  height: 240px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,12 +27,107 @@ section.banner {
 section.banner .about-banner {
   letter-spacing: 0.02rem;
 }
+
+main .main-content {
+  width: 60%;
+  margin: 0 auto;
+  padding: 4rem 15px;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  opacity: 0.8;
+  color: #4a4a4a !important;
+  font-family: Noto Sans TC;
+}
+@media (max-width: 1200px) {
+  main .main-content {
+    padding: 2rem 15px;
+    width: 90%;
+  }
+}
+@media (max-width: 750px) {
+  main .main-content {
+    padding: 1rem 30px;
+    width: 100%;
+  }
+}
+main .main-content .main-content-padding {
+  padding: 1rem 0;
+  letter-spacing: 2px;
+}
+@media (max-width: 750px) {
+  main .main-content .main-content-padding {
+    letter-spacing: 0;
+  }
+}
+main .main-content .main-content-padding.title {
+  font-weight: bold;
+}
+main .main-content .main-content-padding .title {
+  font-weight: bold;
+}
+main .main-content .main-content-padding .main-square {
+  font-size: 2rem;
+  vertical-align: baseline;
+  font-weight: bolder;
+}
+
+dl {
+  color: #4a4a4a;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  font-style: normal;
+  font-stretch: normal;
+}
+@media (max-width: 996px) {
+  dl {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 750px) {
+  dl {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 576px) {
+  dl {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  section .app_download {
+    padding: 1rem 15px;
+  }
+  section .app_download .content {
+    padding-bottom: 0;
+  }
+}
+section.section-app_download {
+  background-color: #efefef;
+}
+section.section-app_download .image {
+  width: 180px;
+  max-width: none;
+}
+@media (max-width: 576px) {
+  section.section-app_download .image {
+    width: 150px;
+  }
+}
 section .app-btn {
   color: white;
-  font-size: x-large;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: normal;
+  font-style: normal;
   width: 40%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   padding: 1rem 0;
+  background-color: #04cac8;
+  border-color: #04cac8;
 }
 section .app-btn:hover {
   color: white;
@@ -65,54 +160,4 @@ section .img-app-block {
 section .img-app-block .img-app {
   width: 50%;
   max-width: initial;
-}
-
-main .main-content {
-  width: 60%;
-  margin: 0 auto;
-  padding: 4rem 15px;
-  font-size: x-large;
-  color: #343a40 !important;
-}
-@media (max-width: 1200px) {
-  main .main-content {
-    padding: 2rem 15px;
-    width: 90%;
-  }
-}
-@media (max-width: 750px) {
-  main .main-content {
-    padding: 1rem 30px;
-    width: 100%;
-  }
-}
-main .main-content .main-content-padding {
-  padding: 1rem 0;
-  letter-spacing: 5px;
-}
-
-@media (max-width: 996px) {
-  dl {
-    font-size: 2.5rem;
-  }
-}
-@media (max-width: 750px) {
-  dl {
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 576px) {
-  dl {
-    font-size: 1.2rem;
-    padding: 0.5rem 0;
-  }
-}
-
-@media (max-width: 576px) {
-  section .app_download {
-    padding: 1rem 15px;
-  }
-  section .app_download .content {
-    padding-bottom: 0;
-  }
 }

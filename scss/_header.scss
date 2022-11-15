@@ -154,6 +154,12 @@ header{
         .btn-info{
             color: white;
             padding: 0.375rem 1rem;
+            &.mr-m{
+                margin-right: 10px;
+            }
+            &.ml-m{
+                margin-left: 10px;
+            }
         }
 
     }
@@ -199,7 +205,12 @@ header{
                 padding: 0.5rem 0.1rem;
                 width: 45%;
                 font-size: 0.75rem;
-                // max-width: 45%;
+                &.mr-m{
+                    margin-right: 0px;
+                }
+                &.ml-m{
+                    margin-left: 0px;
+                }
             }
     
         }
