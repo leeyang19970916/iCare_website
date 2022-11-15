@@ -10,7 +10,7 @@ section.banner {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  background: rgb(25, 105, 101);
+  background: rgb(26, 123, 121);
   font-size: 4rem;
 }
 @media (max-width: 1200px) {
