@@ -4,12 +4,15 @@
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
-    @media (max-width:1200px){
+
+    @media (max-width:1200px) {
         min-height: auto;
     }
-    @media (max-width:576px){
+
+    @media (max-width:576px) {
         padding: 1rem 0;
     }
+
     .container-clinic-from {
         max-width: 75%;
         display: flex;
@@ -18,19 +21,23 @@
         flex-wrap: wrap;
         overflow: hidden;
         padding: 0 5rem;
+
         @media (max-width:1200px) {
             padding: 0 3rem;
             max-width: 100%;
         }
+
         @media (max-width:750px) {
             // padding: 0 1rem;
             max-width: 100%;
             flex-direction: row;
             padding: 0 1rem;
-            dt{
+
+            dt {
                 padding: 0 1rem 0 0;
             }
         }
+
         @media (max-width:576px) {
             flex-direction: column;
             align-items: center;
@@ -38,20 +45,24 @@
 
         .main-content {
             width: 45%;
-            @media (max-width:1200px){
+
+            @media (max-width:1200px) {
                 width: 50%
             }
-            @media (max-width:576px){
+
+            @media (max-width:576px) {
                 width: 100%;
             }
-            dl{
-                @media (max-width:576px){
+
+            dl {
+                @media (max-width:576px) {
                     text-align: center;
                     padding: 0;
                 }
             }
-            dt{
-                @media (max-width:576px){
+
+            dt {
+                @media (max-width:576px) {
                     width: 100%;
                     padding: 0.5rem;
                 }
@@ -60,10 +71,12 @@
 
         .main-form {
             width: 45%;
-            @media (max-width:1200px){
+
+            @media (max-width:1200px) {
                 width: 50%
             }
-            @media (max-width:576px){
+
+            @media (max-width:576px) {
                 width: 100%;
             }
         }
@@ -80,15 +93,28 @@ form {
             font-weight: 400;
             border: 1px solid #5BC7C6;
         }
+
         &::placeholder {
             color: gray;
             font-weight: bolder;
             font-size: 1em;
         }
-        &.form-control-select{
+
+        &.form-control-select {
             color: gray;
             font-weight: bolder;
         }
     }
 
+    .btn-info {
+        color: #fff;
+        background-color: #17a2b8;
+        border-color: #17a2b8;
+
+        &:hover {
+            color: #fff;
+            background-color: #138496;
+            border-color: #117a8b;
+        }
+    }
 }
