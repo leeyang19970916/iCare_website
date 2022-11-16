@@ -10567,6 +10567,11 @@ dd {
 .main-template.container-clinic .main-pic.main-pic-custom50 {
   width: 50%;
 }
+@media (max-width: 1200px) {
+  .main-template.container-clinic .main-pic.main-pic-custom50 {
+    width: 60%;
+  }
+}
 @media (max-width: 750px) {
   .main-template.container-clinic .main-pic.main-pic-custom50 {
     width: 100%;
@@ -10574,6 +10579,11 @@ dd {
 }
 .main-template.container-clinic .main-pic.main-pic-custom40 {
   width: 40%;
+}
+@media (max-width: 1200px) {
+  .main-template.container-clinic .main-pic.main-pic-custom40 {
+    width: 60%;
+  }
 }
 @media (max-width: 750px) {
   .main-template.container-clinic .main-pic.main-pic-custom40 {
@@ -11170,6 +11180,17 @@ section .sign-up .sign-up-step .sign-up-icon .sign-content {
 @media (max-width: 1200px) {
   .section-from .container-clinic-from .main-content {
     width: 50%;
+  }
+}
+@media (max-width: 996px) {
+  .section-from .container-clinic-from .main-content {
+    width: 50%;
+    padding: 0 1.5rem 0 0;
+  }
+}
+@media (max-width: 750px) {
+  .section-from .container-clinic-from .main-content {
+    padding: 0;
   }
 }
 @media (max-width: 576px) {
