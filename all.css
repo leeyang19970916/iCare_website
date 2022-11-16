@@ -10416,7 +10416,7 @@ img {
 
 dl {
   font-style: normal;
-  color: #333333;
+  color: #4a4a4a;
   font-weight: bolder;
   font-size: 2.5rem;
   letter-spacing: 0.04em;
@@ -10438,10 +10438,10 @@ dl {
 }
 
 dt {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.375rem;
   letter-spacing: 0.02em;
-  color: #555555;
+  color: #4a4a4a;
   margin: 0;
   padding: 0.5rem 1.5rem 0 0;
 }
