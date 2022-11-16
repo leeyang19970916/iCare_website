@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="Shortcut Icon" type="image/x-icon" href="pic/icare_ico.ico" />
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+TC"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./all.css" />
     <title>iCare 愛管家</title>
   </head>
@@ -13,17 +16,21 @@
     <header class="bg-white w-100">
       <div class="header-left">
         <div class="logo">
-              <div class="logo-images"> <a href="./iCare_clinic.html"><img src="./pic/logo.svg" alt="" /></a> </div>
-              <div class="logo-name"> <a href="./iCare_clinic.html"> iCare 愛管家</a></div>
+          <div class="logo-images">
+            <a href="./iCare_clinic.html"
+              ><img src="./pic/logo.svg" alt=""
+            /></a>
+          </div>
+          <div class="logo-name">
+            <a href="./iCare_clinic.html"> iCare 愛管家</a>
+          </div>
           <div class="version-btn">
             <a href="./iCare_clinic.html" id="clinic" class="text-info"
               >診所版</a
             >
           </div>
           <div class="version-btn version-btn-two">
-            <a href="./user.html" id="personal" class="text-dark"
-              >個人版</a
-            >
+            <a href="./user.html" id="personal" class="text-dark">個人版</a>
           </div>
         </div>
       </div>
@@ -289,15 +296,16 @@
               <input
                 type="text"
                 class="form-control"
-                id="inputAddress"
+                id="cname"
                 placeholder="診所全名 (必填)"
               />
+              <div class="form-alert cname-alert">我們必須知道您的名字，謝謝！</div>
             </div>
             <div class="form-group">
               <input
                 type="text"
                 class="form-control"
-                id="inputAddress2"
+                id="caddr"
                 placeholder="診所地址"
               />
             </div>
@@ -305,20 +313,22 @@
               <input
                 type="text"
                 class="form-control"
-                id="inputAddress"
+                id="cuser"
                 placeholder="聯絡人 (必填)"
               />
+              <div class="form-alert cuser-alert">嗯，請問您貴姓？怎麼稱呼？</div>
             </div>
             <div class="form-group">
               <input
                 type="text"
                 class="form-control"
-                id="inputAddress2"
+                id="cemail"
                 placeholder="電子信箱 or 診所電話 (必填)"
               />
+              <div class="form-alert cemail-alert">我們需要跟您聯繫，是嗎？</div>
             </div>
             <div class="form-group">
-              <select id="inputState" class="form-control form-control-select">
+              <select id="ctime" class="form-control form-control-select">
                 <option selected>選擇方便連絡時段(整天皆可)</option>
                 <option>09:00~12:00</option>
                 <option>13:00~18:00</option>
@@ -328,12 +338,12 @@
             <div class="form-group">
               <textarea
                 class="form-control"
-                id="exampleFormControlTextarea1"
+                id="ctext"
                 placeholder="訊息內容"
                 rows="6"
               ></textarea>
             </div>
-            <button type="submit" class="btn btn-info text-white w-100">
+            <button type="button" onclick="Contact()" class="btn btn-info text-white w-100">
               送出
             </button>
           </form>
@@ -364,6 +374,68 @@
     </footer>
   </body>
 </html>
-<script  type="text/javascript" src="./Scripts/JQuery.js"></script>
-<script  type="text/javascript" src="./Scripts/bootstrap.js"></script>
+<script type="text/javascript" src="./Scripts/JQuery.js"></script>
+<script type="text/javascript" src="./Scripts/bootstrap.js"></script>
 <script src="all.js"></script>
+<script>
+
+  function Contact() {
+    var cname = $("#cname").val();
+    var caddr = $("#caddr").val();
+    var cuser = $("#cuser").val();
+    var cemail = $("#cemail").val();
+    var ctime = $("#ctime").val();
+    var ctext = $("#ctext").val();
+    if (cname != "" && cuser != "" && cemail != "") {
+      $.ajax({
+        url: "contact.aspx",
+        type: "POST",
+        data: {
+          cn: cname,
+          ca: caddr,
+          cu: cuser,
+          ce: cemail,
+          ct: ctime,
+          cte: ctext,
+        },
+        dataType: "html",
+        success: function (req) {
+          console.log(req,"reqsuccess")
+          if (req == "OK") {
+            alert(
+              "您的訊息已收到，我們的業務會在您希望的時間內盡快與您連繫，謝謝您！"
+            );
+            $("#cname").val("");
+            $("#caddr").val("");
+            $("#cuser").val("");
+            $("#cemail").val("");
+            $("#ctime").val("0");
+            $("#ctext").val("");
+            $(".alert").hide();
+          }
+        },
+        error: function (e) {
+          console.log(e,"error")
+        },
+      });
+    } else {
+      if (cname == "") {
+        $(".cname-alert").show();
+      }else{
+        $(".cname-alert").hide();
+      }
+
+      if (cuser == "") {
+        $(".cuser-alert").show();
+      }else{
+        $(".cuser-alert").hide();
+      }
+
+      if (cemail == "") {
+        $(".cemail-alert").show();
+      }else{
+        $(".cemail-alert").hide();
+      }
+    }
+  }
+</script>

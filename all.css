@@ -11202,6 +11202,7 @@ section .sign-up .sign-up-step .sign-up-icon .sign-content {
 }
 .section-from .container-clinic-from .main-form {
   width: 45%;
+  margin-top: 3.5rem;
 }
 @media (max-width: 1200px) {
   .section-from .container-clinic-from .main-form {
@@ -11211,6 +11212,7 @@ section .sign-up .sign-up-step .sign-up-icon .sign-content {
 @media (max-width: 576px) {
   .section-from .container-clinic-from .main-form {
     width: 100%;
+    margin: 0;
   }
 }
 
@@ -11251,6 +11253,17 @@ form .form-control::placeholder {
 form .form-control.form-control-select {
   color: gray;
   font-weight: bolder;
+}
+form .form-alert {
+  display: none;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  font-size: 14px;
+  font-family: Noto Sans TC;
 }
 form .btn-info {
   color: #fff;

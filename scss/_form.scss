@@ -49,13 +49,16 @@
             @media (max-width:1200px) {
                 width: 50%
             }
+
             @media (max-width:996px) {
                 width: 50%;
                 padding: 0 1.5rem 0 0;
             }
-            @media (max-width:750px){
+
+            @media (max-width:750px) {
                 padding: 0;
             }
+
             @media (max-width:576px) {
                 width: 100%;
             }
@@ -77,6 +80,7 @@
 
         .main-form {
             width: 45%;
+            margin-top: 3.5rem;
 
             @media (max-width:1200px) {
                 width: 50%
@@ -84,6 +88,7 @@
 
             @media (max-width:576px) {
                 width: 100%;
+                margin: 0;
             }
         }
     }
@@ -110,6 +115,18 @@ form {
             color: gray;
             font-weight: bolder;
         }
+    }
+
+    .form-alert {
+        display: none;
+        color: #721c24;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+        padding: 0.75rem 1.25rem;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        font-size: 14px;
+        font-family: Noto Sans TC;
     }
 
     .btn-info {
