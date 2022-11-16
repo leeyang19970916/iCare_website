@@ -10564,6 +10564,22 @@ dd {
     width: 100%;
   }
 }
+.main-template.container-clinic .main-pic.main-pic-custom50 {
+  width: 50%;
+}
+@media (max-width: 750px) {
+  .main-template.container-clinic .main-pic.main-pic-custom50 {
+    width: 100%;
+  }
+}
+.main-template.container-clinic .main-pic.main-pic-custom40 {
+  width: 40%;
+}
+@media (max-width: 750px) {
+  .main-template.container-clinic .main-pic.main-pic-custom40 {
+    width: 100%;
+  }
+}
 .main-template.container-personal {
   max-width: 70%;
 }
@@ -10676,6 +10692,10 @@ header .header-right .btn-info.mr-m {
 }
 header .header-right .btn-info.ml-m {
   margin-left: 10px;
+}
+header .header-right .btn-info:hover {
+  background-color: #08aaa7;
+  border-color: #08aaa7;
 }
 
 @media (max-width: 750px) {
