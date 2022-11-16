@@ -152,18 +152,18 @@ dd {
             }
             &.main-pic-custom50{
                 width: 50%;
-                @media (max-width:1200px) {
-                    width: 60%;
-                }
+                // @media (max-width:996px) {
+                //     width: 60%;
+                // }
                 @media (max-width:750px) {
                     width: 100%;
                 }
             }
             &.main-pic-custom40{
                 width: 40%;
-                @media (max-width:1200px) {
-                    width: 60%;
-                }
+                // @media (max-width:996px) {
+                //     width: 60%;
+                // }
                 @media (max-width:750px) {
                     width: 100%;
                 }
