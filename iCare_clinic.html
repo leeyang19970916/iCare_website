@@ -35,12 +35,13 @@
         </div>
       </div>
       <div class="header-right">
-        <div class="btn btn-info mr-m">
-          <a href="https://clinic.sprinf.com/login">診所登入</a>
-        </div>
-        <div class="btn btn-info ml-m">
-          <a href="https://clinic.sprinf.com/signup">免費申請</a>
-        </div>
+        <a href="https://clinic.sprinf.com/login"
+          ><div class="btn btn-info mr-m">診所登入</div></a
+        >
+        <a href="https://clinic.sprinf.com/signup">
+          <div class="btn btn-info ml-m">免費申請</div>
+          </a
+        >
       </div>
     </header>
     <section>
@@ -299,7 +300,9 @@
                 id="cname"
                 placeholder="診所全名 (必填)"
               />
-              <div class="form-alert cname-alert">我們必須知道您的名字，謝謝！</div>
+              <div class="form-alert cname-alert">
+                我們必須知道您的名字，謝謝！
+              </div>
             </div>
             <div class="form-group">
               <input
@@ -316,7 +319,9 @@
                 id="cuser"
                 placeholder="聯絡人 (必填)"
               />
-              <div class="form-alert cuser-alert">嗯，請問您貴姓？怎麼稱呼？</div>
+              <div class="form-alert cuser-alert">
+                嗯，請問您貴姓？怎麼稱呼？
+              </div>
             </div>
             <div class="form-group">
               <input
@@ -325,7 +330,9 @@
                 id="cemail"
                 placeholder="電子信箱 or 診所電話 (必填)"
               />
-              <div class="form-alert cemail-alert">我們需要跟您聯繫，是嗎？</div>
+              <div class="form-alert cemail-alert">
+                我們需要跟您聯繫，是嗎？
+              </div>
             </div>
             <div class="form-group">
               <select id="ctime" class="form-control form-control-select">
@@ -343,7 +350,11 @@
                 rows="6"
               ></textarea>
             </div>
-            <button type="button" onclick="Contact()" class="btn btn-info text-white w-100">
+            <button
+              type="button"
+              onclick="Contact()"
+              class="btn btn-info text-white w-100"
+            >
               送出
             </button>
           </form>
@@ -378,7 +389,6 @@
 <script type="text/javascript" src="./Scripts/bootstrap.js"></script>
 <script src="all.js"></script>
 <script>
-
   function Contact() {
     var cname = $("#cname").val();
     var caddr = $("#caddr").val();
@@ -400,7 +410,7 @@
         },
         dataType: "html",
         success: function (req) {
-          console.log(req,"reqsuccess")
+          console.log(req, "reqsuccess");
           if (req == "OK") {
             alert(
               "您的訊息已收到，我們的業務會在您希望的時間內盡快與您連繫，謝謝您！"
@@ -415,25 +425,25 @@
           }
         },
         error: function (e) {
-          console.log(e,"error")
+          console.log(e, "error");
         },
       });
     } else {
       if (cname == "") {
         $(".cname-alert").show();
-      }else{
+      } else {
         $(".cname-alert").hide();
       }
 
       if (cuser == "") {
         $(".cuser-alert").show();
-      }else{
+      } else {
         $(".cuser-alert").hide();
       }
 
       if (cemail == "") {
         $(".cemail-alert").show();
-      }else{
+      } else {
         $(".cemail-alert").hide();
       }
     }

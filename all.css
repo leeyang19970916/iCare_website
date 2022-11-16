@@ -10825,6 +10825,9 @@ section .app_download .content {
           justify-content: center;
   padding-bottom: 1rem;
 }
+section .app_download .d-content {
+  display: contents;
+}
 
 section.section-sign-up {
   padding: 3rem 0 1.5rem 0;
